@@ -1,5 +1,5 @@
 ---
-title: "Sobremi"
+title: "Sobre mi"
 permalink: "/sobremi/"
 layout: page
 ---
