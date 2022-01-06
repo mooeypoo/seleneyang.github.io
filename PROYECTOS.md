@@ -1,7 +1,7 @@
 ---
-layout: page
-title: Proyectos
+title: "Proyectos"
 permalink: "/proyectos/"
+layout: page
 ---
 
 ## Geochicas
