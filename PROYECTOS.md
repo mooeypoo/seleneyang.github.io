@@ -1,5 +1,5 @@
 ---
-title: "Proyectos"
+title: "PROYECTOS"
 permalink: "/proyectos/"
 layout: page
 ---
