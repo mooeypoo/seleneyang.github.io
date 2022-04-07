@@ -1,9 +1,16 @@
 ---
 layout: page
 title: "Inicio"
-permalink: "/inicio/"
 ---
+{%- assign posts = paginator.posts | default: site.posts -%}
 
-<!-- {% if site.show_excerpts %}
-  {% include posts.html %}
-{% endif %} -->
+{% include welcome.html %}
+
+{% if posts.size > 0 %}
+  <h1>últimas actualizaciones</h1>
+{% endif %}
+{% if site.show_excerpts %}
+  {% include home.html %}
+{% else %}
+  {% include archive.html title="Posts" %}
+{% endif %}

@@ -1,0 +1,42 @@
+<div class="wrapper">
+  <div class="rounded-image">
+    <img src="https://avatars.githubusercontent.com/u/20440464?v=4" class="rounded" alt="Selene Yang">
+  </div>
+  <div class="intro">
+    {% capture my_include %}{% include welcometext.md %}{% endcapture %}
+    {{ my_include | markdownify }}
+  </div>
+</div>
+
+<style>
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5em;
+}
+
+.rounded-image {
+  width: 100px;
+  height: 100px;
+  min-width: 100px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+img {
+  display: inline;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+}
+
+img.rounded {
+  object-fit: cover;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+</style>
